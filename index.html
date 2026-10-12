@@ -12,22 +12,54 @@
     <p>Track your expenses and convert currencies.</p>
 
 
+    <section id="expense-form">
+        <h2>Add a New Expense</h2>
+        <form id ="add-expense-form">
+        <label for="expense-name">Expense Name</label>
+        <input
+         type="text"
+         id="expense-name"
+         placeholder="e.g Groceries"
+         required
+         >
 
+         <label for="expense-amount">Amount</label>
+         <input
+          type="text"
+         id="expense-amount"
+         placeholder="Enter amount"
+         min="0.01"
+         step="0.01"
+         required
+         >
+         <label for="Expense-category">Category</label>
+         <select  id="expense-category" required>
+            <option value="">choose a category</option>
+            <option value="">Food</option>
+            <option value="">Transport</option>
+            <option value="">shopping</option>
+            <option value="">Bills</option>
+            <option value="">Other</option>
+         </select>
 
+         <label for="Expense-currency">Currency</label>
+         <select id="expense-currency" required>
+            <option value="KES">KES -Kenyan Shillings</option>
+            <option value="USD">USD -US Dollars</option>
+            <option value="EUR">EUR -Euro</option>
+            <option value="GBP">GBP -British Pound</option>
+         </select>
+<button type="submit">Add Expense</button>
 
+</form>
+    </section>
+    <section id="expense-list">
+        <h2>Your Expenses</h2>
+        <p id="empty-message">No Expense added yet.</p>
+        <ul id="expenses"></ul>
 
+    </section>
+    <script src="script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 </html>
